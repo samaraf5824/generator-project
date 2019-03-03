@@ -10,7 +10,7 @@
   //our own jQuery
   $(function() {
    $('h1').css('text-align', 'center');
-   
+
    $('button').click(function(){
    var business = $('#business').val();
    var name = $('#name').val();
@@ -19,23 +19,27 @@
    var phrase = $('#phrase').val();
   
  
- var box = business + name + number + phrase + color;
+ var box = business + name + number + phrase ;
 console.log(box)
-$('h2').html(box);
+$('div').html(box);
+
+console.log(color)
+$('div').css('background-color',color);
+
 
  });
   });
  </script>
   <style>
    div {
-    background-color: black;
-    border: 5px solid black;
-    padding: 10px;
-    position: absolute;
-    width: 108px;
-    top: 0px;
-    left: 0;
-    box-shadow: 10px 1px;
+    background-color: white;
+   padding: 110px;
+     width: 500px;
+    box-shadow: 5px 5px;
+   }
+    
+    body {
+    background-color: lightblue;
     }
   </style>
 </head>
@@ -46,8 +50,11 @@ $('h2').html(box);
  Color Of Card: <input id="color"><br> Phone Number: <input id="number"><br> 
  Business Phrase: <input id="phrase"><br> 
  <button>Create Card</button>
-<h2> </h2>
 
+<div>
+
+ 
+</div>
 </body>
 
 </html>
