@@ -17,12 +17,12 @@
    var color = $('#color').val();
    var number = $('#number').val();
    var phrase = $('#phrase').val();
-  
  
- var box = business + name + number + phrase ;
-console.log(box)
-$('div').html(box);
 
+ $('h2').html( business)
+ $('h3').html( name)
+ $('h4').html( phrase)
+ $('h5').html( number)
 console.log(color)
 $('div').css('background-color',color);
 
@@ -33,7 +33,7 @@ $('div').css('background-color',color);
   <style>
    div {
     background-color: white;
-   padding: 110px;
+   padding: 0px;
      width: 500px;
     box-shadow: 5px 5px;
    }
@@ -41,6 +41,26 @@ $('div').css('background-color',color);
     body {
     background-color: lightblue;
     }
+  h2{
+   font-size:45px;
+   text-align:center ;
+   margin-bottom:80px;
+  }
+   h3{
+   
+     padding-top:10;
+     margin-bottom:90px;
+   } 
+    h4{
+      font-size:25px;
+    
+      
+    }
+    h5{
+      text-align:right ;
+      font-size:15px;
+    }
+    
   </style>
 </head>
 
@@ -52,8 +72,10 @@ $('div').css('background-color',color);
  <button>Create Card</button>
 
 <div>
-
- 
+<h2></h2>
+ <h3></h3>
+ <h4></h4>
+ <h5></h5>
 </div>
 </body>
 
